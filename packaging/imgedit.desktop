@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name=imgedit
+Comment=A image editor for Linux
+Exec=imgedit %F
+Icon=imgedit
+Terminal=false
+Type=Application
+Categories=Graphics;2DGraphics;RasterGraphics;
+MimeType=image/png;image/jpeg;image/bmp;image/gif;image/tiff;image/x-imgedit;
+Keywords=image;photo;editor;graphics;design;
+StartupNotify=true
+StartupWMClass=imgedit
+
+[Desktop Action new]
+Name=New Project
+Exec=imgedit --new
+
+[Desktop Action open]
+Name=Open Image
+Exec=imgedit --open
