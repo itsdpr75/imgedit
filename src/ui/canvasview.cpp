@@ -84,6 +84,9 @@ void CanvasView::setTool(Tool *tool)
     m_tool = tool;
     if (m_tool) {
         setCursor(m_tool->cursor());
+        setDragMode(QGraphicsView::NoDrag);
+    } else {
+        setDragMode(QGraphicsView::ScrollHandDrag);
     }
 }
 
